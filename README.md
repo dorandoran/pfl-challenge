@@ -6,7 +6,7 @@ Visit [here](http://pfl-challenge.s3-website.us-east-2.amazonaws.com)
 
 ## Built With
 - [React](https://reactjs.org/)
-    Javascript librar for building UI
+    Javascript library for building UI
 - [Redux](https://redux.js.org/)
     State container for Javascript apps
 - [AWS-Amplify](https://aws-amplify.github.io/)
