@@ -41,12 +41,9 @@ class ProductDetails extends Component {
             this.setState({ error: '', price: pricing.orderTotalPrice }, () => {
                 addToCart(this.state);
             });
-
-        } else if (selectedDelivery.value !== 0 && !pricing) {
-            this.setState({ error: 'Please wait until estimated total updates' });
-
+            
         } else {
-            this.setState({ error: 'Need to Select a Shipping Option' });
+            this.setState({ error: 'Please wait until estimated total updates' });
         }
     }
 
