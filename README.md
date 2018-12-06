@@ -2,7 +2,7 @@
 A sample website using PFL test-api 
 
 ## Access
-Visit 
+Visit [here](http://pfl-challenge.s3-website.us-east-2.amazonaws.com)
 
 ## Built With
 - [React](https://reactjs.org/)
