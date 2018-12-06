@@ -1,0 +1,27 @@
+.main-sent-div {
+    width: 85%;
+    min-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-sent__title {
+    text-align: center;
+}
+
+.sent__items {
+    border-bottom: 2px dotted #f10091
+}
+
+.sent__ordercustomer {
+    border-bottom: 2px solid #05a7e5;
+    padding-bottom: 1rem;
+}
+
+.sent__total {
+    text-align: end;
+}
+
+.sent__sending {
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+.main-header {
+    width: 100%;
+    height: 4rem;
+    background: #05a7e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__brand {
+    img {
+        height: 2rem;
+        vertical-align: middle;
+    }
+}
+
+.main-nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__item {
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: white;
+        padding: 0.2rem 0;
+    }
+
+    &:hover,
+    &:active {
+        color: yellow;
+        border-bottom: 5px solid yellow;
+    }
+}
