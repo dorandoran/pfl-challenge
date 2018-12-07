@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-import { fetchProductDetail, cartAddProduct } from '../../actions';
+import { fetchProductDetail, cartAddProduct, clearPrice } from '../../actions';
 
 import ProductDetail from './ProductDetails';
 
@@ -22,6 +22,9 @@ class ProductDetailPage extends Component {
     // If page reloaded, fetch info
     renderProductDetail() {
         const { selectedProduct, fetchProductDetail, match, error} = this.props;
+
+        // clears price state
+        this.props.clearPrice();
 
         if(error) {
             return <h2 className="main-error-div">Error occured loading items!</h2>;
@@ -69,5 +72,5 @@ function mapStateToProps ({ products, cart }){
 
 export default compose(
     withRouter,
-    connect(mapStateToProps, { fetchProductDetail, cartAddProduct })
+    connect(mapStateToProps, { fetchProductDetail, cartAddProduct, clearPrice })
 )(ProductDetailPage);

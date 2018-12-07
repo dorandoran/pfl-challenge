@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchProducts, clearPrice } from '../../actions';
+import { fetchProducts } from '../../actions';
 import ProductList from './ProductList';
 
 class Landing extends Component {
     render() {
         const { products, error } = this.props;
-
-        this.props.clearPrice();
 
         if(error){
             return <h2 className="main-error-div">Error occured loading items!</h2>
@@ -33,4 +31,4 @@ function mapStateToProps ({ products }){
     };
 }
 
-export default connect(mapStateToProps, { fetchProducts, clearPrice })(Landing);
+export default connect(mapStateToProps, { fetchProducts })(Landing);
