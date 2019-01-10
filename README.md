@@ -1,9 +1,6 @@
 # PFL-Challenge
 A sample website using PFL test-api 
 
-## Access
-Visit [here](http://pfl-challenge.s3-website.us-east-2.amazonaws.com)
-
 ## Built With
 - [React](https://reactjs.org/)
     Javascript library for building UI
